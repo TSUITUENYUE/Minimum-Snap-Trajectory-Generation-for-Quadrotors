@@ -1,0 +1,13 @@
+{
+    "bounds": {"extents": [0.0, 10.0, -5.0, 20.0, 0.0, 4.1]},
+    "blocks": [
+        {"extents": [4.0, 6.0, -4.0, 18.0, 2.0, 4.0]}
+    ],
+    "margin": 0.3,
+    "resolution": [0.2, 0.2, 1.0],
+    "start": [5.0, -5.0, 3.0],
+    "goal": [5.0, 19.0, 3.0],
+    "expected_path_length": 27.5,
+    "timeout": 500.0,
+    "algorithms": ["dijkstra", "astar"]
+}

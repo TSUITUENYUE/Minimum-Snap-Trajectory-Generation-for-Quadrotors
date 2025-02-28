@@ -1,0 +1,1 @@
+The R_to_quaternion function is referenced from: https://www.euclideanspace.com/maths/geometry/rotations/conversions/matrixToQuaternion/
