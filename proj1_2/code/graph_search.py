@@ -49,8 +49,8 @@ def graph_search(world, resolution, margin, start, goal, astar):
     gv = np.inf*np.ones((length, width, height))
 
     def heuristic(index):
-        # return 2.0 * (abs(index[0] - goal_index[0]) + abs(index[1] - goal_index[1])+ abs(index[2] - goal_index[2]))
-        return ((index[0] - goal_index[0]) ** 2 + (index[1] - goal_index[1]) ** 2 + (index[2] - goal_index[2]) ** 2) ** 0.5
+        return 1.5 * (abs(index[0] - goal_index[0]) + abs(index[1] - goal_index[1])+ abs(index[2] - goal_index[2]))
+       # return ((index[0] - goal_index[0]) ** 2 + (index[1] - goal_index[1]) ** 2 + (index[2] - goal_index[2]) ** 2) ** 0.5
         # return 1.5 * np.linalg.norm(np.array(index) - np.array(goal_index))
 
     h0 = 0 + heuristic(start_index) if astar else 0
